@@ -6,21 +6,17 @@
 #Before I concider any code, I need to tell what this application will do.
 print("This program calculates and displays travel expenses.")
 
-#First, I need to get the program to gather information from the user and store them as variables.
-#The text input type must match what will be typed. I put a try-exept block to prevent crashing just in case!
-try:
-    budget = float(input("Please enter the budget for your trip: "))
-except ValueError:
-     print("Please type in only numbers.")
+#I need to get the program to gather information from the user and store them as variables.
+#The error checking uses a string of regular expression code, I was able to figure it out with my professor.
+#It tells what caracters are allowed in a string of text, allowing the program to limit letters from being inputted for number fields.
+import re
 
-destination = input("Where would you like to go? ")
- 
-try:
-    gas = float(input("How much do you think you'll use on gas? "))
-except ValueError:
-     print("Please type in only numbers.")
-try:
-    hotel = float(input("And last but not least, how much will you use on food? "))
-except ValueError:
-     print("Please type in only numbers.")
- 
+budget = input("Enter a budget: ")
+# This regex matches an optional sign, digits, and an optional decimal part.
+pattern = r'^[+-]?(\d+(\.\d*)?|\.\d+)$'
+while not re.match(pattern, budget):
+    print("Letters not allowed")
+    budget = input("Enter a budget: ")
+
+# Loop breaks if budget matches the pattern. Then it is converted into a float!
+budget = float(budget)
