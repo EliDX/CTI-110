@@ -1,7 +1,7 @@
  # Elijah Dixon
  # 9/26/24
  # P1HW2
- # I have been taskes to create a program that can do basic math on any number that is entered.
+ # I have been tasked to create a program that can do basic math on any number that is entered, relating to travel expenses.
 
 #Before I concider any code, I need to tell what this application will do.
 print("This program calculates and displays travel expenses.")
