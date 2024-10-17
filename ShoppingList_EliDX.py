@@ -4,6 +4,7 @@
 #Getting info for item 1. I am using an f string for the first time in this project! Wohoo! Also we are going to stop them for puttting letters.
 item1 = input("Enter your first item: ")
 quantity1 = int(input(f"Enter the quantity of {item1}: "))
+price1 = float(input(f"Enter the price of {item1}: "))
 
 #I could add this code to stop any items from going though that are not numbers, but I didn't for this project.
 '''
