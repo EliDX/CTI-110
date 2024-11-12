@@ -22,4 +22,4 @@ for item in range(numitems):
 
 # Print every item in the cart.
 print()
-print("Items you purhcased are: ")
+print(f"Items you purhcased are: {cart} ")
