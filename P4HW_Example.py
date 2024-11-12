@@ -1,4 +1,5 @@
 # Example which will help on finishing P4 HW 1
+# Elijah Dixon
 
 # List of available items (unneeded for hw)
 availableitems = ["soil", "perlite", "terracotta pot", "fertilizer", "insecticidal soap",\
