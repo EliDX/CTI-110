@@ -49,6 +49,9 @@ def main():
         print("😋😍😏😛")
         plant = input("Enter a plant that grows in the wild: ")
         habitat = get_habitat(plant)
+        if habitat == None:
+            print("I ONLY KNOW 15 PLANTS OK 😭😭😭")
+            continue
         print(f"I grabbed a {plant}, it was living in the {habitat}.")
         print()
         grab_amount = int(input(f"How many MORE {habitat} plants should I grab? "))
